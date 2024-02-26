@@ -1,0 +1,325 @@
+body{
+    background-color: black;
+}
+
+header{
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#home header{
+    animation: slideColorChange 2s ease forwards;
+}
+
+@keyframes slideColorChange {
+    0%{
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%); /* End position (right) */
+    }
+}
+
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#home nav{
+    animation: slideIn 3s ease forwards;
+}
+
+@keyframes slideIn {
+    0%{
+        transform: translateX(100%);
+    }100%{
+        transform: translateX(0%);
+    }
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    top: 10px;
+    right: 10px;
+    padding: 10px 25px;
+    background-color: transparent;
+    color: #3498db;
+    text-decoration: none;
+    border: 2px solid #3498db;
+    border-radius: 20px;
+    box-shadow: 0 6px 6px rgba(74, 204, 255,.7);
+    transition: background-color 1s ease, color 1s ease;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #3498db;
+}
+
+nav ul li:hover{
+    background-color: rgb(74, 204, 255);
+}
+
+nav ul li:hover a{
+    color: black;
+}
+
+body{
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.about{
+    animation: fadeIn 5s;
+}
+
+.assignments{
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0%{
+        color: rgba(255, 255, 255, 0);
+    }
+    100%{
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    scroll-padding-bottom: 30px;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+.middle{
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.outside{
+    width: 25%;
+}
+
+.card{
+    height: auto;
+    width: 400px;
+    aspect-ratio: 1 / 0.7;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card .image-box img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: .5s ease-in-out;
+    z-index: 0;
+    position: relative;
+    transform: translateY(-100px);
+}
+
+.card .image-box2 img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: .5s ease-in-out;
+    z-index: 0;
+    position: relative;
+}
+
+.card .image-box3 img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: .5s ease-in-out;
+    z-index: 0;
+    position: relative;
+    transform: translateY(-500px);
+}
+
+.card::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: .4s ease-in-out;
+    z-index: 1;
+}
+
+.card .content {
+    position: absolute;
+    top: 50%; /* Position content at the vertical center */
+    left: 50%; /* Position content at the horizontal center */
+    transform: translate(-50%, -50%); /* Center content */
+    z-index: 2; /* Set content z-index higher than pseudo-element */
+    opacity: 0;
+}
+
+.card:hover .content{
+    animation: fadeWords 1s;
+    opacity: 100%;
+}
+
+@keyframes fadeWords {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.card:hover img{
+    filter: grayscale(1) brightness(0.4);
+}
+
+.card:hover::after{
+    opacity: 1;
+    inset: 20px;
+}
+
+.card:hover .content h2{
+    scale: 1;
+    opacity: 1;
+}
+
+.card:hover .content p{
+    opacity: 1;
+    width: 130%;
+    transform: translateX(-30px);
+}
+
+.topLeft{
+    position: absolute;
+    top: 10px;
+    left:10px;
+    text-align: left;
+    border-radius: 50%;
+}
+
+.topLeft img {
+    width: 10%; /* Adjust the width of the image */
+    height: 10%; /* Maintain aspect ratio */
+    border-radius: 50%;
+    border-width: 50%;
+}
+
+.assignment{
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.assignment .content_for_assignments{
+    padding-bottom: 10px;
+}
+
+.project-card {
+    background-color: #34495e; /* Card background color */
+    color: #ecf0f1; /* Text color */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.project-card h3 {
+    text-align: left;
+    transform: translateY(-25px);
+    color: #3498db; /* Heading color */
+}
+
+.project-card p {
+    margin-top: 10px;
+}
+
+.tags {
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+    color: #95a5a6; /* Tags color */
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling for main content */
+}
+
+.entry {
+    display: flex;
+    justify-content: space-between;
+}
+
+.entry p1 {
+    margin: 0; /* Remove default margin for <p1> elements */
+}
+
+.entry h2 {
+    margin: 0; /* Remove default margin for <p1> elements */
+    text-decoration: underline;
+}
+
+.entry .left {
+    order: 1; /* Set the order for left part */
+    margin-left: 10%;
+}
+
+.entry2 .left {
+    text-align: left;
+    order: 1;
+    margin-left: 15%;
+    margin-right: 20%;
+}
+
+.entry2 .left p1{
+    text-align: left;
+}
+
+.entry .right {
+    order: 2; /* Set the order for right part */
+    text-align: right; /* Align text to the right */
+    margin-right: 10%;
+}
+
+.linkedin p a ion-icon{
+    font-size: 30px;
+    transform: translateY(9px);
+    color: #1064c4;
+}
+
+.github p a ion-icon{
+    font-size: 30px;
+    transform: translateY(9px);
+    color: white;
+}
+
+.contacts p a{
+    color: #3498db;
+}
+
+.contacts p a:hover{
+    color: #e74c3c;
+}
