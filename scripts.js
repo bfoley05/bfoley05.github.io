@@ -23,6 +23,13 @@ window.addEventListener('scroll', function() {
     }
 });
 
+window.onload = function() {
+    var background = document.getElementById('back-img');
+    if (background) {
+        background.style.opacity = '0';
+    }
+};
+
 window.addEventListener('scroll', function() {
     var projects = document.getElementById('projects');
     var background = document.getElementById('back-img');
