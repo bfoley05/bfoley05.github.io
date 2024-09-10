@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Foley | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header>
+        <div class="logo">Brandon Foley</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <button class="menu-icon">☰</button>
+            <div class="dropdown-content">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="hero-section">
+        <video autoplay loop muted plays-inline class="back-video" id="background-video">
+            <source src="images/background.MP4" type="video/mp4">
+        </video>
+        <h1>Crafting Digital Innovation</h1>
+        <p>A Digital Portfolio by Brandon Foley</p>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>My name is Brandon Foley, and I am a sophomore at Chapman University...</p>
+        </div>
+        <div class="scroll-container">
+            <img src="images/Me.jpg" alt="Me">
+            <img src="images/family.jpg" alt="Family">
+            <img src="images/Friends.jpg" alt="Friends">
+            <img src="images/poleVaultImage.jpg" alt="Pole Vault">
+            <img src="images/Team.jpg" alt="Team">
+            <img src="images/parks.jpg" alt="National Park">
+            <img src="images/coding_image.jpg" alt="Coding">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <img src="images/Stars.jpg" class="back-img" id="back-img">
+        <div class="content">
+            <h2>Projects</h2>
+            <p>Here are some of my recent works...</p>
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3>CHOC AWS Datathon Project Winner</h3>
+                <p>Utilized python and its many libraries to create neural networks, linear regression, and random forest models to try and make the best use of the data that we could. We used real data from the medical world to develop this program and perform preprocessing. </p>
+                <span class="tags">AI, Python, AWS, Datathon</span>
+            </div>
+            <div class="project-card">
+                <h3>AWS Deep Racer Event Winner</h3>
+                <p>Developed a reward function to develop the fastest car around a track using Python and AWS to develop and test the reward function. In addition I received prizes for the fastest car out of all participants </p>
+                <span class="tags">AI, Python, AWS</span>
+            </div>
+            <div class="project-card">
+                <h3>LA Hacks Project</h3>
+                <p>Led the development of an innovative project aimed at using AI technology to analyze various factors of a person's body to generate personalized workout materials. Our team developed two large language models integrated into our website, one utilizing OpenCV and the other leveraging Google's Gemini AI. In addition, we created a Python-based platform called REFLEX to serve as both the frontend and backend of the project.</p>
+                <span class="tags">AI, Python, Hackathon, Web Development</span>
+            </div>
+            <div class="project-card">
+                <h3>Web Development Portfolio</h3>
+                <p>Developed a personal portfolio website showcasing my programming projects. Used HTML/CSS for the frontend development. Different effects and styles applied using CSS to improve user interface.</p>
+                <span class="tags">Web Development, HTML, CSS</span>
+            </div>
+            <div class="project-card">
+                <h3>Secure Medical Database System</h3>
+                <p>Created a comprehensive and secure medical database to store drugs and other prescriptions. I also included mock health records to simulate real patients. In addition I used an API to connect to all teh medicine that are "in stock" at the counter.</p>
+                <span class="tags">Java, CSVs</span>
+            </div>
+            <div class="project-card">
+                <h3>Autonomous Car</h3>
+                <p>Engineered and created a autonomous car from scratch, handwiring the car using an arduino breadboard. In addition I used soldering and 3D printing to assist in the build. Using an Arduino IDE I wrote code to have the program avoid objects using multiple ultrasonic sensors</p>
+                <span class="tags">C, Wiring, soldering, 3D printing</span>
+            </div>
+            <div class="project-card">
+                <h3>Garmin Watch API</h3>
+                <p>Imported data from my own Garmin watch to analyze and examine my atheltic trends. The program is able to display certian types of activites recorded as well as display the running power for running exercises and intensity of all workouts</p>
+                <span class="tags">Java, CSVs</span>
+            </div>
+            <div class="project-card">
+                <h3>Robber Language Translator</h3>
+                <p>Translated a file of English words or phrases and then translated them to the "robber language". The program then outputs the data into html format to print out the new words on a webpage</p>
+                <span class="tags">C++, HTML</span>
+            </div>
+            <div class="project-card">
+                <h3>Egyptian Rat Screw</h3>
+                <p>Simulated a game of egpytian ratscrew with the specified number of players. Will run through the program with random decks for each player and generate each player a "pattern" to look for.</p>
+                <span class="tags">Java</span>
+            </div>
+            <div class="container">
+                <table>
+                    <tr>
+                        <td>
+                            <button id="see-more-btn">See More</button>
+                        </td>
+                        <td>
+                            <button id="see-less-btn">See Less</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="words">
+            <h1>
+                INTUITIVE  -  ADVENTUROUS  -  CREATIVE  -  OUTGOING  -  BALANCED  -  PROACTIVE  -  
+                INTUITIVE  -  ADVENTUROUS  -  CREATIVE  -  OUTGOING  -  BALANCED  -  PROACTIVE  -  
+                INTUITIVE  -  ADVENTUROUS  -  CREATIVE  -  OUTGOING  -  BALANCED  -  PROACTIVE  -  
+                INTUITIVE  -  ADVENTUROUS  -  CREATIVE  -  OUTGOING  -  BALANCED  -  PROACTIVE  -  
+                INTUITIVE  -  ADVENTUROUS  -  CREATIVE  -  OUTGOING  -  BALANCED  -  PROACTIVE  -  
+                INTUITIVE  -  ADVENTUROUS  -  CREATIVE  -  OUTGOING  -  BALANCED  -  PROACTIVE  -  
+                INTUITIVE  -  ADVENTUROUS  -  CREATIVE  -  OUTGOING  -  BALANCED  -  PROACTIVE  -  
+                INTUITIVE  -  ADVENTUROUS  -  CREATIVE  -  OUTGOING  -  BALANCED  -  PROACTIVE  -  
+                INTUITIVE  -  ADVENTUROUS  -  CREATIVE  -  OUTGOING  -  BALANCED  -  PROACTIVE  -  
+                INTUITIVE  -  ADVENTUROUS  -  CREATIVE  -  OUTGOING  -  BALANCED  -  PROACTIVE  -  
+                INTUITIVE  -  ADVENTUROUS  -  CREATIVE  -  OUTGOING  -  BALANCED  -  PROACTIVE  -  
+                INTUITIVE  -  ADVENTUROUS  -  CREATIVE  -  OUTGOING  -  BALANCED  -  PROACTIVE  -  
+                INTUITIVE  -  ADVENTUROUS  -  CREATIVE  -  OUTGOING  -  BALANCED  -  PROACTIVE  -  
+                INTUITIVE  -  ADVENTUROUS  -  CREATIVE  -  OUTGOING  -  BALANCED  -  PROACTIVE  -  
+            </h1>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="content">
+            <h2>Resume</h2>
+            <p>Check out my resume below...</p>
+            <div class="resume-content">
+                <object data="Brandon_Foley-Resume.pdf" width="1000" height="500"></object>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="content">
+            <h2>Contact Me</h2>
+            <p>I'd love to hear from you...</p>
+            <a href="https://www.linkedin.com/in/brandon-foley-a5975b290/"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://github.com/bfoley05"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="mailto: brandonfoley05@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
+            <a href="tel: +17608143013"><ion-icon name="call-outline"></ion-icon></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Brandon Foley. All Rights Reserved.</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
