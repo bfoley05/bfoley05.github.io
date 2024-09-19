@@ -19,6 +19,7 @@ header {
     z-index: 1000;
 }
 
+
 header .dropdown {
     position: absolute;
     right: 2rem;
@@ -110,6 +111,10 @@ footer p {
 
     .hero h1 {
         font-size: 3rem;
+    }
+
+    .back-video {
+        display: none;
     }
 }
 
@@ -259,6 +264,12 @@ div.scroll-container img {
     margin-left: 10%;
     display: none; /* Hide all project cards initially */
 }
+
+.project-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 
 .project-card.show {
     display: block; /* Show project cards with the 'show' class */
