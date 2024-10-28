@@ -24,6 +24,10 @@ window.addEventListener('scroll', function() {
 });
 
 window.onload = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
     var background = document.getElementById('back-img');
     if (background) {
         background.style.opacity = '0';
