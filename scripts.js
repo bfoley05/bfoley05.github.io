@@ -1,3 +1,15 @@
+window.scrollTo({
+    top: 0,
+    behavior: "instant",
+});
+
+window.addEventListener('load', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "instant" // Adjust scroll behavior as needed
+    });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.querySelector('.menu-icon');
     const nav = document.querySelector('header nav ul');
