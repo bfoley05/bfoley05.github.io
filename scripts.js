@@ -25,7 +25,8 @@ window.addEventListener('scroll', function() {
 
 window.onload = function() {
     window.scrollTo({
-        top: 0
+        top: 0,
+        behavior: "instant",
     });
     var background = document.getElementById('back-img');
     if (background) {
